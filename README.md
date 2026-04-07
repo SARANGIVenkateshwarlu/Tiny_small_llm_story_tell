@@ -1,24 +1,16 @@
 # **Project: Build Large Language Models From Scratch**
 
-A step-by-step project series focused on understanding how large language models are built from the ground up, from data preprocessing and attention to pre-training, fine-tuning, and evaluation. The goal of the project is to train the reader to think like a fundamental machine learning engineer rather than only using ready-made LLM APIs.
 
 ## Project Overview
 
-This project walks through the complete lifecycle of building an LLM from scratch. It begins with the foundations of text processing and tokenization, moves into the internal mechanics of attention and Transformer blocks, and then progresses to training, fine-tuning, and evaluation. The codebase is designed in a modular way so each building block can be understood, modified, and extended independently.
+
 
 ## Motivation
 
-The main purpose of the project is educational: to make the inner workings of LLMs transparent and accessible. Instead of treating an LLM as a black box, the project emphasizes the “nuts and bolts” of model construction, helping learners develop a deeper intuition for how language models learn, represent context, and generate predictions.
 
 ## What This Project Covers
 
-The lecture series and codebase cover three major stages:
 
-1. Foundation stage.
-2. Pre-training stage.
-3. Fine-tuning and evaluation stage.
-
-Each stage builds on the previous one, similar to constructing a house from the foundation upward.
 
 ## Stage 1: Foundation
 
@@ -26,7 +18,6 @@ This stage focuses on the core components required before training begins.
 
 ### Data Preprocessing
 
-The first step is converting raw text into a form that a neural network can use. Text is broken into tokens, tokens are mapped to token IDs, and those IDs are converted into dense vector representations called embeddings. Positional embeddings are added so the model can preserve token order, producing the final input embeddings used by the model.
 
 ### Intuition
 
