@@ -1,0 +1,51 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files > 100M
+*.pth
+*.pt
+*.bin
+
+# Data
+data/
+
+# Plots / outputs
+*.pdf
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# UV
+uv.lock
+
+# Python version
+.python-version
+
+# GPT folders > 100M
+gpt2/
+
+#Download data
+.zip
+sms_spam_collection/
+.csv
+.zip
+sms_spam_collection/
+.csv
+output/
+models/
+output_backup/
+output_backup.zip

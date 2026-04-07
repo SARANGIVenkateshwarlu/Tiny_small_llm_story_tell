@@ -1,0 +1,71 @@
+
+# ---- Core Kernel ----
+ipykernel>=6.29.0
+
+# ---- PyTorch (Install separately with CUDA 12.1 index URL) ----
+# IMPORTANT: Install torch first using:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+torch
+torchvision
+torchaudio
+
+# ---- HuggingFace Ecosystem ----
+# transformers>=4.38.0
+datasets>=2.18.0
+tokenizers>=0.15.0
+#sentencepiece>=0.1.99
+#accelerate>=0.27.0
+#peft>=0.9.0
+#evaluate>=0.4.0
+
+# ---- Efficient / LLM Optimization ----
+# einops>=0.7.0
+# bitsandbytes>=0.42.0
+tiktoken>=0.5.1
+#faiss-cpu>=1.7.4
+importlib
+
+# ---- Scientific Stack ----
+numpy>=1.26.0,<2.1
+pandas>=2.2.0
+scikit-learn>=1.4.0
+scipy>=1.12.0
+statsmodels>=0.14.0
+xgboost>=2.0.0
+
+# ---- Visualization ----
+matplotlib>=3.8.0
+seaborn>=0.13.0
+tqdm>=4.66.0
+
+# ---- Deployment ----
+#fastapi>=0.110.0
+#uvicorn>=0.27.0
+
+# ---- Utilities ----
+#psutil>=5.9.5
+
+#uv venv --python 3.12
+#.venv\Scripts\activate
+#python --version
+#uv add tensorflow   # But TensorFlow does NOT support 3.14 yet
+#uv add torch numpy matplotlib tqdm tiktoken
+
+#uv python pin 3.12  (This locks the project to Python 3.12)
+
+
+#rmdir /s /q .venv (Recreate Environment)
+#uv venv
+#.venv\Scripts\activate
+
+#uv add tensorflow --frozen
+#uv add torch numpy matplotlib tqdm tiktoken
+
+
+
+# curl -fsSL https://ollama.com/install.sh | sh 
+# ollama --version
+# ollama pull llama3:8b
+# ollama run llama3:8b -- python -c "import torch; print(torch.__version__)"
+
