@@ -2,7 +2,8 @@
 
 
 ## Project Overview
-
+## Total parameters: 22.27M
+## Trainable parameters: 22.27M
 
 
 ## Motivation
@@ -163,3 +164,5 @@ By completing the series, the learner gains hands-on experience in building:
 
 This makes the project a strong portfolio piece for interviews, research discussions, and practical ML/LLM engineering work.
 
+
+Run: terminal:  streamlit run streamlit_app.py

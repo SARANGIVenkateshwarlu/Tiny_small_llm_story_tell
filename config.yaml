@@ -1,0 +1,51 @@
+# Configuration file for Tiny Small LLM Story Teller
+# Professional setup for hyperparameters, paths, and settings
+
+# Model architecture settings
+model:
+  vocab_size: 50257
+  block_size: 128
+  n_layer: 5
+  n_head: 8
+  n_embd: 320
+  dropout: 0.063
+  bias: false
+
+# Training hyperparameters
+training:
+  learning_rate: 0.0003
+  min_lr: 0.00003
+  weight_decay: 0.1
+  beta2: 0.95
+  warmup_steps: 200
+  batch_size: 24
+  gradient_accumulation_steps: 16
+  grad_clip: 1.0
+  max_iters: 100000
+  eval_interval: 1000
+  eval_iters: 200
+
+# Paths and file locations
+paths:
+  checkpoint_candidates:
+    - "./models/final_best_model_state_dict.pt"
+    - "./models/model_state_dict.pt"
+  data_path: "./data"
+  train_bin: "train.bin"
+  val_bin: "validation.bin"
+  save_dir: "./checkpoints"
+
+# Device and environment settings
+device:
+  auto_detect: true  # Set to false to specify manually
+  manual_device: "cuda"  # Only used if auto_detect is false
+
+# Generation settings (for inference)
+generation:
+  temperature: 1.0
+  top_k: 50
+  max_new_tokens: 100
+
+# Tokenizer settings
+tokenizer:
+  encoding: "gpt2"
